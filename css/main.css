@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(8, 12, 24);
+}
+.content h2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.time{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+}
+.time div{
+    margin: 0 20px;
+    padding: 40px;
+    background-color: rgb(165, 77, 77);
+}
+.time h1{
+    font-size: 140px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.time h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* background-color: #000; */
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 30px 0px 30px;
+    border-top: 2px dashed #fff;
+    font-weight: 500;
+}
+.time div:nth-child(1){
+    background-color: rgb(6, 116, 79);
+}
+.time div:nth-child(2){
+    background-color: rgb(16, 102, 128);
+}
+@media screen and (max-width: 575px){
+    .time{
+        display: block;
+    }
+    .time h1{
+        font-size: 50px;
+    }
+    .time h3{
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 30px 30px 0px 30px;
+    }
+    .time div{
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .time{
+        display: block;
+    }
+    .time h1{
+        font-size: 60px;
+    }
+    .time h3{
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 30px 30px 0px 30px;
+    }
+    .time div{
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .time h1{
+        font-size: 90px;
+    }
+    .time h3{
+        font-size: 30px;
+        margin-top: 20px;
+        padding: 30px 30px 0px 30px;
+    }
+    .time div{
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .time h1{
+        font-size: 110px;
+    }
+    .time h3{
+        font-size: 40px;
+        margin-top: 20px;
+        padding: 30px 30px 0px 30px;
+    }
+    .time div{
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+}
